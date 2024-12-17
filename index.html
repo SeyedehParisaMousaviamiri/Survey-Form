@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Questionnaire</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Dating Questionnaire</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+
+<fieldset>
+    <label for="dating">1.
+Dating Date</label>
+<input type="date" id="dating" name="dating" required> </fieldset>
+
+<fieldset>
+   <label for="matchmaker">2.
+Matchmaker</label>
+        <input id="matchmaker" name="matchmaker" type="text" required/> 
+</fieldset>
+
+<fieldset>
+  <label for="client-name" id="name-label">3.
+Client name</label>
+<div class="input-group">
+        <input id="name" name="first-name" type="text" placeholder="First Name" required/> 
+        <input id="name" name="last-name" type="text" placeholder="Last Name"required/>
+        </div> 
+</fieldset>
+
+<fieldset>
+  <label for="refferer">4.
+Referred by</label>
+<div class="input-group">
+        <input id="first-name" name="first-name" type="text" placeholder="First Name" required/> 
+        <input id="last-name" name="last-name" type="text" placeholder="Last Name"required/> 
+        </div>
+</fieldset>
+
+<fieldset> 
+ <label for="age" id="number-label">5.
+Age <input id="number" type="number" name="age" min="18" max="120" placeholder="Your Age" /></label>
+ </fieldset>
+
+ <fieldset>
+        <legend>6.Gender</legend>
+        <label for="male"><input id="male" type="radio" name="gender"class="inline" value="0" checked /> Male</label>
+        <label for="female"><input id="female" type="radio" name="gender" class="inline" value="1" /> Female</label>
+  </fieldset>
+
+<fieldset> 
+  <label for="marital-status">7.
+Marital status
+          <select id="dropdown" name="marital-status">
+            <option value="">(select one)</option>
+            <option value="1">Married</option>
+            <option value="2">Divorced</option>
+            <option value="3">Single</option>
+            <option value="4">Widowed</option>
+          </select>
+     </fieldset>
+
+ <fieldset>
+        <legend>8.Is seeking</legend>
+        <label for="seeking-male"><input id="seeking-male" type="radio" name="preference"class="inline" value="0" checked /> Male</label>
+        <label for="seeking-female"><input id="seeking-female" type="radio" name="preference" class="inline" value="1" /> Female</label>
+  </fieldset>
+
+  <fieldset>
+   <label for="age-range">9.
+Is seeking age range of</label>
+        <select id="age-range" name="age-range">
+        <option value="">(select one)</option>
+            <option value="1">20-30</option>
+            <option value="2">30-40</option>
+            <option value="3">40-50</option>
+            <option value="4">+50</option>
+          </select>
+</fieldset>
+
+<fieldset>
+<label for="qualities">10.
+What are some important qualities you seek in a mate?
+          <textarea id="qualities" name="qualities" rows="3" cols="30" placeholder="Describe qualities you seek..."></textarea></label>
+  </fieldset>
+
+<fieldset>
+    
+<label>11.Hobbies</label>
+   <label>   <input type="checkbox" name="hobbies" value="reading" class="inline">
+            Reading
+        </label>
+        <label>
+            <input type="checkbox" name="hobbies" value="traveling" class="inline">
+            Traveling
+        </label>
+        <label>
+            <input type="checkbox" name="hobbies" value="cooking" class="inline">
+            Cooking
+        </label>
+        <label>
+            <input type="checkbox" name="hobbies" value="sports" class="inline">
+            Sports
+        </label>
+ </fieldset>
+
+<fieldset>
+<label for="about">12.
+Tell us something about you?
+          <textarea id="about" name="about" rows="3" cols="30" placeholder="Share a bit about yourself..."></textarea></label>
+      </fieldset>
+
+  <fieldset>    
+      <label for="email" id="email-label">13. Email Address <input id="email" name="email" type="email" placeholder="Your Email Address" required /></label>
+  </fieldset>
+
+  <input id="submit" type="submit" value="Submit" />
+   </form>
+  </body>
+</html>
