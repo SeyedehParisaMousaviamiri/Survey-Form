@@ -1,97 +1,92 @@
 body {
-    margin: 0;
-    padding: 20px;
-    color: #F48FB1;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-     background-image: url('https://image.cdn2.seaart.ai/2023-06-22/37077536141381/3559fb0f80820a21459778758f1f74a2d75ea304_high.webp');
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  
-  h1, p {
-    margin: 1em auto;
-    text-align: center;
-  }
-  
+  margin: 0;
+  padding: 20px;
+  color: #F48FB1;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-image: url('https://image.cdn2.seaart.ai/2023-06-22/37077536141381/3559fb0f80820a21459778758f1f74a2d75ea304_high.webp');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  padding: 0.5em;
+  background-color: #E6E6FA;
+  border: 1px solid #F48FB1;
+  color: #333;  /* Changed to a dark color for better contrast */
+  border-radius: 4px;
+}
+
+.inline {
+  display: inline;
+  vertical-align: middle;
+  width: unset;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group input {
+  width: 48%; 
+  box-sizing: border-box; 
+  padding: 10px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2.5em;
+  font-size: 1.1rem;
+  background-color: #F48FB1;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  min-width: 300px;
+}
+
+input[type="submit"]:hover {
+  background-color: #D06FA2;  /* A slightly darker shade for hover state */
+}
+
+@media screen and (max-width: 600px) {
   form {
-    width: 60vw;
-    max-width: 500px;
-    min-width: 300px;
-    margin: 0 auto;
-    padding: 2em 0;*
+    width: 80vw;
   }
-  
-  fieldset {
-    border: none;
-    padding: 2rem 0;
-    padding:0 0;
+}
+
+@media screen and (max-width: 300px) {
+  form {
+    width: 90vw;
   }
-  
-  label {
-    display: block;
-    margin: 0.5rem 0;
-    
-  }
-  
-  input, textarea, select {
-    margin: 10px 0 0 0;
-    width: 100%;
-    min-height: 2em;
-    padding: 0.5em;
-    background-color: #E6E6FA;
-    border: 1px solid #F48FB1;
-    color: #ffffff;
-    border-radius: 4px;
-  }
-  
-  .inline {
-    width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-  }
-  
-  input[type="submit"] {
-    display: block;
-    width: 60%;
-    margin: 1em auto;
-    height: 2.5em;
-    font-size: 1.1rem;
-    background-color:#F48FB1;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    min-width: 300px;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #E6E6FA;
-  }
-  
-  .inline {
-    display: inline;
-    vertical-align: middle;
-  }
-  .input-group {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .input-group input {
-    width: 48%; 
-    box-sizing: border-box; 
-    padding: 10px;
-  }
-  
-  @media screen and (max-width: 600px) {
-    form {
-      width: 80vw;
-    }
-  }
-  
-  @media screen and (max-width: 300px) {
-    form {
-      width: 90vw;
-    }
+}
