@@ -1,42 +1,18 @@
 # Survey Form
 
-A responsive web-based survey form built using HTML, CSS, and JavaScript. This project collects user feedback on various topics and validates inputs before submission.
+A clean, responsive survey form built with **HTML**, **CSS**, and **JavaScript**. Collects user feedback, validates inputs in real time, and displays a confirmation on success.
 
----
+## Features
+- Responsive layout (mobile & desktop)  
+- Live validation for name, email, age, and gender  
+- Accessible form elements with clear error messages  
 
-## 📝 Table of Contents
+## Getting Started
+1. **Clone**  
+   ```bash
+   git clone https://github.com/SeyedehParisaMousaviamiri/Survey-Form.git
+   cd Survey-Form
 
-- [Demo](#-demo)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Form Fields](#form-fields)
-- [Validation](#validation)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
-## 🚀 Demo
-
-> Live demo: [Survey Form](https://surveyform-parisa.netlify.app/)
-
-
----
-
-## 🌟 Features
-
-- Responsive design for desktop and mobile.  
-- Real-time form validation.  
-- Accessible HTML structure with labels.  
-- Clear error messages for invalid inputs.  
-- Semantic HTML5 elements.
-
----
-
-## 🛠️ Tech Stack
 
 - **HTML5** for markup.  
 - **CSS3** (Flexbox/Grid) for layout and styling.  
@@ -50,3 +26,14 @@ A responsive web-based survey form built using HTML, CSS, and JavaScript. This p
    ```bash
    git clone https://github.com/SeyedehParisaMousaviamiri/Survey-Form.git
    cd Survey-Form
+
+
+ ## Usage
+Fill out required fields (Name, Email, Gender).
+
+Click Submit.
+
+Fix any highlighted errors; see the success message when complete.
+
+## License
+MIT © Seyedeh Parisa Mousaviamiri
